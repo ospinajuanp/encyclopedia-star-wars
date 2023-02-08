@@ -19,5 +19,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "ospinajuanp-reset-css": "^1.0.7",
+    "sass": "^1.58.0"
   }
 }
