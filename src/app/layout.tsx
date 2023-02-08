@@ -1,5 +1,5 @@
-import './resetStyle.scss';
-import './globals.scss'
+import '../styles/resetStyle.scss';
+import '../styles/globals.scss'
 
 export default function RootLayout({
   children,

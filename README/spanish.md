@@ -3,7 +3,7 @@ Crea una app que sirva para listar los personajes de Star Wars y que te permita 
 
 ## Requisitos:
 
-- Usa el API https://swapi.dev/
+- Usa el API https://swapi.dev/ - https://swapi.dev/api/people/
 - El diseño es de libre elección.
 - Debe mostrar un listado y un detalle de cada personaje.
 - El listado tendrá que estar paginado.
