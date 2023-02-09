@@ -1,9 +1,11 @@
 interface lista{
-    peliculas:string[]
+    movies:string[]
 }
 
 
-const Films: React.FC<lista> = (peliculas) => {
+
+
+const Films: React.FC<lista> = (movies) => {
 
 
     return (
