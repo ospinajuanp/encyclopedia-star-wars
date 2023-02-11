@@ -1,4 +1,5 @@
 import getData from './services/personaje.services'
+import Link from 'next/link';
 import '../../styles/idPage.scss'
 
 
@@ -7,7 +8,10 @@ const person = await getData(params.id);
   return (
     
     <div className='containerPersonaje'>
-      <p className='title'>{person.name}</p>
+      <div className='title'>
+        <Link href={`/`} key={params.id}> {'<'} </Link>
+        <p >{person.name}</p>
+      </div>
       <div className='styleDate'>
         <p >Height : {person.height}</p>
         <p >Mass : {person.mass}</p>
@@ -23,7 +27,7 @@ const person = await getData(params.id);
       <div className='styleDate'>
         <p >Gender : {person.gender}</p>
       </div>
-      <div className='styleDate'>
+      <div className='styleDateFinish'>
         <p >Date Of Created : {person.created}</p>
         <p >Last Date Of Edited : {person.edited}</p>
       </div>

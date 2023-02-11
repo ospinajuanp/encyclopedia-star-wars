@@ -1,5 +1,5 @@
-import '../styles/page.module.scss'
-import LayoutPeople from '@/containers/LayoutPeoples';
+import '../styles/page.scss'
+import Link from 'next/link';
 import useGetPeople from '../hooks/useGetPeoples'
 
 interface response{
@@ -69,11 +69,15 @@ const Home= async () => {
     personajes.push(personaje)
   })
   
+  
   return (
+
     <div>
-      <h1>Hello World</h1>
-      {<LayoutPeople data={personajes} key={1}></LayoutPeople>}
-      
+      <div className='containerBtn'>
+        {personajes.map((person, index)=>(
+          <Link className='containerBtn-link' href={`/${index+1}`} key={index}>{person.name}</Link>
+        ))}
+      </div>
     </div>
   )
 }
