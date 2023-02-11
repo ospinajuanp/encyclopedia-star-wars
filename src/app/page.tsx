@@ -68,7 +68,6 @@ const Home= async () => {
   response9.results.map(personaje=>{    
     personajes.push(personaje)
   })
-  console.log(personajes)
   
   return (
     <div>

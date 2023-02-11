@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerPersonaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 20rem;
+    padding: 1rem;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    color: black;
+
+}
+@mixin boxDate {    
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+@mixin styleFont{
+    font-size: 1.2em;
+    font-weight: 400;
+
+}
+@mixin borderStyle ($brtl, $brtr,$brbl,$brbr){
+    border-radius: $brtl $brtr $brbl $brbr;
+}
+
+.title{
+    @include boxDate;
+    @include borderStyle(1rem, 1rem, 0, 0);
+    // border-top-left-radius: 1rem ;
+    // border-top-right-radius: 1rem;
+    font-size: 2.4em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.styleDate{
+    @include boxDate;
+    @include styleFont;
+    @include borderStyle(0, 0, 1rem, 1rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
