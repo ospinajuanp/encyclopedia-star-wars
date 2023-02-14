@@ -19,7 +19,6 @@ body{
     border-radius: 2rem;
     overflow: hidden;
     color: black;
-
 }
 @mixin boxDate {    
     width: 100%;
@@ -32,17 +31,13 @@ body{
 @mixin styleFont{
     font-size: 1.2em;
     font-weight: 400;
-
 }
 @mixin borderStyle ($brtl, $brtr,$brbl,$brbr){
     border-radius: $brtl $brtr $brbl $brbr;
 }
-
 .title{
     @include boxDate;
     @include borderStyle(1rem, 1rem, 0, 0);
-    // border-top-left-radius: 1rem ;
-    // border-top-right-radius: 1rem;
     font-size: 2.4em;
     font-weight: 800;
     text-transform: uppercase;
@@ -57,7 +52,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 .styleDateFinish{
     @include boxDate;
@@ -66,5 +60,4 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
