@@ -6,7 +6,8 @@ interface response{
   count: number,
   next: string,
   previous: string,
-  results: data[],
+  results: Array<data>
+  data,
 }
 
 type data ={

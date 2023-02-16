@@ -1,3 +1,4 @@
+'use client'
 import getData from './services/personaje.services'
 import Link from 'next/link';
 import '../../styles/idPage.scss'
